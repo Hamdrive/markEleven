@@ -9,9 +9,9 @@ function checkLucky(dob, luckydob){
         sum += Number(dob.charAt(i));
     }
     if(sum%luckydob == 0){
-        showMessage("Your birthday is lucky!!");
+        showMessage("🥳 Your birthday is lucky 🥳");
     } else {
-        showMessage("Sorry pal Your birthday is lucky!!");
+        showMessage("😟 Sorry pal, your birthday is not lucky 😟");
     }
 }
 
@@ -27,7 +27,7 @@ function getNumbers(){
     if(dob && luckydob){
         formatInputs(dob, luckydob);
     } else {
-        showMessage("Oops! Please enter values in both fields")
+        showMessage("😵 Oops! Please enter values in both fields 😵")
     }
 }
 
