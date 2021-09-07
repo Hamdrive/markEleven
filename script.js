@@ -9,9 +9,9 @@ function checkLucky(dob, luckydob){
         sum += Number(dob.charAt(i));
     }
     if(sum%luckydob == 0){
-        displayMessage.innerHTML = "Your birthday is lucky!!"
+        showMessage("Your birthday is lucky!!");
     } else {
-        displayMessage.innerHTML = "Sorry pal Your birthday is lucky!!"
+        showMessage("Sorry pal Your birthday is lucky!!");
     }
 }
 
@@ -24,7 +24,14 @@ function formatInputs(dob, luckydob){
 function getNumbers(){
     var dob = birthday.value;
     var luckydob = luckyNumber.value;
-    formatInputs(dob, luckydob);
+    if(dob && luckydob){
+        formatInputs(dob, luckydob);
+    } else {
+        showMessage("Oops! Please enter values in both fields")
+    }
 }
 
+function showMessage(userMessage){
+    displayMessage.innerHTML = userMessage
+}
 luckyBtn.addEventListener("click", getNumbers);
