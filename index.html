@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Birthday!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="title">
@@ -19,7 +20,7 @@
     </div>
     <div class="luckynumber">
         <label for="luckynumber-input">Enter your Lucky Number</label>
-        <input type="number" class="luckynumber-input">
+        <input type="number" min="1" class="luckynumber-input">
     </div>
     <div class="check-lucky">
         <button id="check-btn">Are you Lucky?</button>
@@ -27,5 +28,6 @@
     <div class="result">
         <p id="result-message"></p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
