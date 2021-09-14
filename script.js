@@ -17,7 +17,6 @@ function checkLucky(dob, luckydob){
 
 function formatInputs(dob, luckydob){
     dob = dob.replaceAll("-","");
-    luckydob = Number(luckydob);
     checkLucky(dob, luckydob);
 }
 
@@ -25,7 +24,11 @@ function getNumbers(){
     var dob = birthday.value;
     var luckydob = luckyNumber.value;
     if(dob && luckydob){
-        formatInputs(dob, luckydob);
+        if(luckydob > 0){
+            formatInputs(dob, luckydob);
+        } else {
+            showMessage("😟 Please enter a positive lucky number! 😟")
+        }
     } else {
         showMessage("😵 Oops! Please enter values in both fields 😵")
     }
