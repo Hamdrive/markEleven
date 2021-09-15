@@ -2,6 +2,8 @@
 
 Want to know if your birthday is lucky? Try it right here. Enter your birthday and lucky number, and find out!
 
+Live Demo: https://getyourluckybday.netlify.app
+
 ## Getting it running
 
 Fork the repository, spin up a live server and get calculating!
