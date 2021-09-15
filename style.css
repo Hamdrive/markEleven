@@ -9,19 +9,25 @@
 body{
     text-align: center;
     width: 100%;
-    height: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-}
-
-.title, .sub-title{
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .title{
     font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: auto;
+    padding: 0.75rem 0;
+    background-color: #ffb224;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-top: 1rem;
     font-weight: 500;
-    margin-top: 2rem;
 }
 
 .sub-title{
@@ -73,4 +79,41 @@ button:hover {
 
 .result{
     font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.icons i{
+    margin: 0 2rem;
+    color: black;
+}
+
+.icons i:hover{
+    color: rgb(1, 69, 114);
+}
+
+.bottom-container{
+    background-color: #ffb224;
+    height: 100px;
+    width: 100%;
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+.footer-link{
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.copyright{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
 }
